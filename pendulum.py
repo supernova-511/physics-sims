@@ -1,3 +1,4 @@
+# run this file (pendulum.py) from the Anaconda prompt, by typing the command 'python pendulum.py'
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
@@ -81,5 +82,5 @@ def animate(i):
 
 ani = animation.FuncAnimation(fig, animate, len(sol.t), interval=dt*1000, blit=True)
 plt.show()
-progress_callback = lambda i, n: print(f'Saving frame {i}/{n}')
-ani.save(filename="pendulum.mp4", fps=60, dpi=300, progress_callback=progress_callback, bitrate=5000)
+"""progress_callback = lambda i, n: print(f'Saving frame {i}/{n}')
+ani.save(filename="pendulum.mp4", fps=60, dpi=300, progress_callback=progress_callback, bitrate=5000)"""
